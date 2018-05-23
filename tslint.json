@@ -1,0 +1,38 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "typedef": [
+            true,
+            "call-signature"
+        ],
+        "curly": [
+            true,
+            "ignore-same-line"
+        ],
+        "object-literal-sort-keys": false,
+        "no-use-before-declare": true,
+        "trailing-comma": false,
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape"
+        ],
+        "semicolon": [
+            true,
+            "never"
+        ],
+        "max-line-length": [
+            true,
+            95
+        ],
+        "no-require-imports": true,
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "array-type": [
+            true,
+            "generic"
+        ]
+    }
+}
