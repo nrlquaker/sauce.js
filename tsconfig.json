@@ -2,8 +2,9 @@
     "compilerOptions": {
         "target": "es2015",
         "module": "commonjs",
+        "esModuleInterop": true,
         "declaration": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "outDir": "./dist",
         "rootDir": "./",
         "removeComments": false,
@@ -17,7 +18,7 @@
         "noFallthroughCasesInSwitch": true,
         "preserveConstEnums": true,
         "moduleResolution": "node",
-        "pretty": true,
+        "pretty": true
     },
     "include": [
         "./lib",

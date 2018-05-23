@@ -39,12 +39,19 @@
         "url": "https://github.com/nrlquaker/sauce.js/issues"
     },
     "homepage": "https://github.com/nrlquaker/sauce.js#readme",
+    "dependencies": {
+        "buffer-reader": "^0.1.0",
+        "fs": "0.0.1-security"
+    },
     "devDependencies": {
+        "@types/buffer-reader": "^0.1.0",
         "@types/chai": "^4.1.3",
         "@types/mocha": "^5.2.0",
+        "@types/node": "^10.1.2",
         "chai": "^4.1.2",
         "mocha": "^5.2.0",
         "nyc": "^11.8.0",
+        "ts-loader": "^4.3.0",
         "ts-node": "^6.0.3",
         "tslint": "^5.10.0",
         "typescript": "^2.8.3"
