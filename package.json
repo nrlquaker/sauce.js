@@ -31,7 +31,9 @@
         "url": "git+https://github.com/nrlquaker/sauce.js.git"
     },
     "keywords": [
-        "sauce"
+        "sauce",
+        "ansii-art",
+        "ascii-art"
     ],
     "author": "nrlquaker",
     "license": "MIT",
