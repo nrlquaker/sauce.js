@@ -11,3 +11,7 @@ const sp = new SauceParser()
 const result = sp.parse('/path/to/file.ans')
 console.log(result)
 ```
+
+## License
+
+sauce.js is released under the [MIT License](https://github.com/nrlquaker/sauce.js/blob/master/LICENSE)
