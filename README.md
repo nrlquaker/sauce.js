@@ -4,6 +4,9 @@
 
 sauce.js is is [SAUCE](http://www.acid.org/info/sauce/sauce.htm) parser for Node.js
 
+## Installation
+`npm install sauce.js`
+
 ## Usage
 
 ```typescript
