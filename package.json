@@ -1,7 +1,7 @@
 {
     "name": "sauce.js",
     "version": "1.0.0",
-    "description": "",
+    "description": "SAUCE parser for Node.js",
     "main": "dist/lib/index.js",
     "types": "dist/lib/index.d.ts",
     "scripts": {
