@@ -7,7 +7,8 @@
     "scripts": {
         "build": "tsc",
         "test": "nyc mocha",
-        "lint": "tslint --project tsconfig.json --type-check"
+        "lint": "tslint --project tsconfig.json --type-check",
+        "prepublishOnly": "npm run lint && npm run build"
     },
     "nyc": {
         "include": [
