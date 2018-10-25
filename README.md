@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/nrlquaker/sauce.js.svg?branch=master)](https://travis-ci.com/nrlquaker/sauce.js)
 
-sauce.js is is [SAUCE](http://www.acid.org/info/sauce/sauce.htm) parser for Node.js
+sauce.js is [SAUCE](http://www.acid.org/info/sauce/sauce.htm) parser for Node.js
 
 ## Installation
 `npm install sauce.js`
