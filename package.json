@@ -7,7 +7,7 @@
     "scripts": {
         "build": "tsc",
         "test": "nyc mocha",
-        "lint": "tslint --project tsconfig.json --type-check",
+        "lint": "tslint --project tsconfig.json --type-check; markdownlint README.md CHANGELOG.md",
         "prepublishOnly": "npm run lint && npm run build"
     },
     "nyc": {
@@ -52,6 +52,7 @@
         "@types/mocha": "^5.2.0",
         "@types/node": "^10.1.2",
         "chai": "^4.1.2",
+        "markdownlint-cli": "^0.13.0",
         "mocha": "^5.2.0",
         "nyc": "^11.8.0",
         "ts-loader": "^4.3.0",
