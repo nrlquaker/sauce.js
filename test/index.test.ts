@@ -1,20 +1,20 @@
 import { expect } from 'chai'
 import { SauceParser } from '../lib/index'
 
-describe('greeter function test', () => {
-    it('Test file not found', () => {
+describe('SAUCE parsing:', () => {
+    it('File not found', () => {
         const sp = new SauceParser()
         const fileName = '/no/such/file'
         const func = () => sp.parse(fileName)
         expect(func).to.throw(`File ${fileName} not found`)
     })
-    it('Test file without SAUCE', () => {
+    it('File without SAUCE', () => {
         const sp = new SauceParser()
         const result = sp.parse(__dirname + '/files/FILE_ID.DIZ')
         // tslint:disable-next-line:no-unused-expression
         expect(result).to.be.null
     })
-    it('Test SAUCE in ans', () => {
+    it('File with comments', () => {
         const sp = new SauceParser()
         const result = sp.parse(__dirname + '/files/us-crypt.ans')
         // tslint:disable-next-line:no-unused-expression
@@ -41,7 +41,7 @@ describe('greeter function test', () => {
         expect(result!.tInfo4).to.equal(0)
         expect(result!.tInfoS).to.equal('IBM VGA')
     })
-    it('Test SAUCE in nfo', () => {
+    it('File without comments', () => {
         const sp = new SauceParser()
         const result = sp.parse(__dirname + '/files/ACIDVIEW.NFO')
         // tslint:disable-next-line:no-unused-expression
