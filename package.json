@@ -10,6 +10,9 @@
         "lint": "tslint --project tsconfig.json --type-check; markdownlint README.md CHANGELOG.md",
         "prepublishOnly": "npm run lint && npm run build"
     },
+    "files": [
+        "dist/"
+    ],
     "nyc": {
         "include": [
             "lib/**/*.ts"
