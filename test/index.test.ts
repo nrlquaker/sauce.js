@@ -14,6 +14,12 @@ describe('SAUCE parsing:', () => {
         // tslint:disable-next-line:no-unused-expression
         expect(result).to.be.null
     })
+    it('File with filesize less than SAUCE size', () => {
+        const sp = new SauceParser()
+        const result = sp.parse(__dirname + '/files/FILE_ID_2.DIZ')
+        // tslint:disable-next-line:no-unused-expression
+        expect(result).to.be.null
+    })
     it('File with comments', () => {
         const sp = new SauceParser()
         const result = sp.parse(__dirname + '/files/us-crypt.ans')

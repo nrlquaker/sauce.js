@@ -17,6 +17,9 @@ export default class SauceParser {
         const buffer = Buffer.alloc(fullFileSize)
         fs.readSync(fd, buffer, 0, fullFileSize, 0)
         const reader = new BufferReader(buffer)
+        if (fullFileSize < SauceParser.SAUCE_SIZE) {
+            return null
+        }
         reader.seek(fullFileSize - SauceParser.SAUCE_SIZE)
         const id = reader.nextString(5)
         if (id !== SauceParser.SAUCE_ID) {
