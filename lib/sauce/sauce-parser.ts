@@ -1,5 +1,6 @@
 import BufferReader from 'buffer-reader'
 import * as fs from 'fs'
+import '../extensions/string'
 import getDataTypeForCode from './data-types'
 import Sauce from './sauce'
 
@@ -39,7 +40,7 @@ export default class SauceParser {
         const tInfo4 = reader.nextUInt16LE()
         const commentLines = reader.nextUInt8()
         const flags = reader.nextUInt8()
-        const tInfoS = reader.nextStringZero()
+        const tInfoS = reader.nextString(22).strip('\u0000')
         const comments = commentLines > 0 ?
             this.parseComments(reader, fullFileSize, commentLines) : []
         return {
